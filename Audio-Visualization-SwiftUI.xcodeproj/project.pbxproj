@@ -11,6 +11,11 @@
 		EF4436FE2A79BE49002FBD1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4436FD2A79BE49002FBD1F /* ContentView.swift */; };
 		EF4437002A79BE4A002FBD1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4436FF2A79BE4A002FBD1F /* Assets.xcassets */; };
 		EF4437032A79BE4A002FBD1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4437022A79BE4A002FBD1F /* Preview Assets.xcassets */; };
+		EF44370A2A79C740002FBD1F /* AudioPreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4437092A79C740002FBD1F /* AudioPreviewModel.swift */; };
+		EF44370C2A79C807002FBD1F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44370B2A79C807002FBD1F /* Service.swift */; };
+		EF44370E2A79CD65002FBD1F /* AudioPlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44370D2A79CD65002FBD1F /* AudioPlayViewModel.swift */; };
+		EF4437102A79D3CD002FBD1F /* AudioPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44370F2A79D3CD002FBD1F /* AudioPreview.swift */; };
+		EF4437142A79DB21002FBD1F /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF4437132A79DB21002FBD1F /* audio.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		EF4436FD2A79BE49002FBD1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF4436FF2A79BE4A002FBD1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF4437022A79BE4A002FBD1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF4437092A79C740002FBD1F /* AudioPreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPreviewModel.swift; sourceTree = "<group>"; };
+		EF44370B2A79C807002FBD1F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		EF44370D2A79CD65002FBD1F /* AudioPlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayViewModel.swift; sourceTree = "<group>"; };
+		EF44370F2A79D3CD002FBD1F /* AudioPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPreview.swift; sourceTree = "<group>"; };
+		EF4437132A79DB21002FBD1F /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = audio.mp3; path = ../../Downloads/audio.mp3; sourceTree = "<group>"; };
+		EF4437152A79DB3D002FBD1F /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +46,7 @@
 		EF4436EF2A79BE49002FBD1F = {
 			isa = PBXGroup;
 			children = (
+				EF4437132A79DB21002FBD1F /* audio.mp3 */,
 				EF4436FA2A79BE49002FBD1F /* Audio-Visualization-SwiftUI */,
 				EF4436F92A79BE49002FBD1F /* Products */,
 			);
@@ -51,10 +63,15 @@
 		EF4436FA2A79BE49002FBD1F /* Audio-Visualization-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				EF4437152A79DB3D002FBD1F /* audio.mp3 */,
 				EF4436FB2A79BE49002FBD1F /* Audio_Visualization_SwiftUIApp.swift */,
 				EF4436FD2A79BE49002FBD1F /* ContentView.swift */,
+				EF44370D2A79CD65002FBD1F /* AudioPlayViewModel.swift */,
+				EF4437092A79C740002FBD1F /* AudioPreviewModel.swift */,
+				EF44370F2A79D3CD002FBD1F /* AudioPreview.swift */,
 				EF4436FF2A79BE4A002FBD1F /* Assets.xcassets */,
 				EF4437012A79BE4A002FBD1F /* Preview Content */,
+				EF44370B2A79C807002FBD1F /* Service.swift */,
 			);
 			path = "Audio-Visualization-SwiftUI";
 			sourceTree = "<group>";
@@ -126,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4437032A79BE4A002FBD1F /* Preview Assets.xcassets in Resources */,
+				EF4437142A79DB21002FBD1F /* audio.mp3 in Resources */,
 				EF4437002A79BE4A002FBD1F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF44370E2A79CD65002FBD1F /* AudioPlayViewModel.swift in Sources */,
 				EF4436FE2A79BE49002FBD1F /* ContentView.swift in Sources */,
+				EF44370C2A79C807002FBD1F /* Service.swift in Sources */,
+				EF4437102A79D3CD002FBD1F /* AudioPreview.swift in Sources */,
 				EF4436FC2A79BE49002FBD1F /* Audio_Visualization_SwiftUIApp.swift in Sources */,
+				EF44370A2A79C740002FBD1F /* AudioPreviewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
